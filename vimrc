@@ -1,9 +1,14 @@
+" Settings
 set tabstop=4 shiftwidth=4 expandtab
 set autoindent smartindent
 set hlsearch
 set wildchar=<Tab> wildmenu wildmode=full
 set mouse=a
 set number
+
+" Mappings
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
 
 " Vundle
 set rtp+=~/.vim/bundle/vundle/

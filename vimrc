@@ -1,10 +1,25 @@
-" Settings
-set tabstop=4 shiftwidth=4 expandtab
-set autoindent smartindent
+" Tabs
+set tabstop=2 shiftwidth=2 expandtab autoindent smartindent
+set backspace=indent,eol,start
+
+" Use highlighting
 set hlsearch
+
+" Buffer tabs
 set wildchar=<Tab> wildmenu wildmode=full
+set hidden
+
+" Mouse
 set mouse=a
+
+" Linenumbers
 set number
+
+" Powerline
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+set laststatus=2
+set t_Co=256
+let g:airline_powerline_fonts = 1
 
 " Mappings
 nnoremap <Tab> :bnext<CR>

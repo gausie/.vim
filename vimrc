@@ -11,6 +11,9 @@ set hlsearch
 set wildchar=<Tab> wildmenu wildmode=full
 set hidden
 
+" Filetype
+:filetype plugin on
+
 " Mouse
 set mouse=a
 

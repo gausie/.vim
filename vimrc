@@ -26,6 +26,8 @@ autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
 " Mappings
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
+map OA <up>
+map OB <down>
 
 " Vundle
 set rtp+=~/.vim/bundle/vundle/

@@ -42,6 +42,21 @@ nnoremap <S-Tab> :bprevious<CR>
 map OA <up>
 map OB <down>
 
+" Drupal syntax highlighting
+if has("autocmd")
+  " Drupal *.module and *.install files.
+  augroup module
+    autocmd BufRead,BufNewFile *.module set filetype=php
+    autocmd BufRead,BufNewFile *.install set filetype=php
+    autocmd BufRead,BufNewFile *.test set filetype=php
+    autocmd BufRead,BufNewFile *.inc set filetype=php
+    autocmd BufRead,BufNewFile *.profile set filetype=php
+    autocmd BufRead,BufNewFile *.view set filetype=php
+    autocmd BufRead,BufNewFile *.theme set filetype=php
+  augroup END
+endif
+syntax on
+
 " Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -67,3 +82,7 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'othree/html5-syntax.vim'
 Bundle 'nginx.vim'
 Bundle 'mustache/vim-mustache-handlebars'
+
+" Work specific
+Bundle 'bserem/vim-drupal'
+Bundle 'christoomey/vim-tmux-navigator'

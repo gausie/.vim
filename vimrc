@@ -2,10 +2,20 @@
 set tabstop=2 shiftwidth=2 expandtab autoindent smartindent
 set backspace=indent,eol,start
 
+" Nice colours
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256
+endif
+
 " Use highlighting
 set tabstop=2 shiftwidth=2 expandtab
 set autoindent smartindent
 set hlsearch
+
+" Show column 80
+highlight ColorColumn guibg=MediumPurple
+highlight ColorColumn ctermbg=98
+set cc=81
 
 " Buffer tabs
 set wildchar=<Tab> wildmenu wildmode=full
